@@ -5,6 +5,13 @@
       "configOverride": {
         "defaultSchema": "prd"
       },
+      "gitRef": "main"
+    }
+    {
+      "name": "development",
+      "configOverride": {
+        "defaultSchema": "dev"
+      },
       "gitRef": "dev"
     }
   ]
