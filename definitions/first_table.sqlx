@@ -1,0 +1,5 @@
+config {
+    type: "table",
+    schema: constants.schema_name
+}
+select 1 as test

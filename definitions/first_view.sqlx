@@ -1,0 +1,6 @@
+config {
+    type: "view"
+}
+
+
+select * from ${ref("first_table")}
