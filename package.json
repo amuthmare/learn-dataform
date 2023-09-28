@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "dataform_dev",
+=======
   "name": "dataform_development",
+>>>>>>> refs/heads/main
   "dependencies": {
     "@dataform/core": "2.4.2"
   }
