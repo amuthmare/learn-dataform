@@ -6,7 +6,24 @@ function audit(table,  metrics) {
         from ${table}
       `;
   }
+/* 
+function customSchema takes an argument and joins with default env value,from dataform.json,
+to create custom schema name
+*/
+function customSchema(source) {
+    return "infohub" + "_" + source;
+}
 
-  module.exports = { audit };
+/* 
+function customDatabase uses default env value,from dataform.json,
+to create custom database name
+Custom database name does not accept any other value then Google Project ID as database name
+*/
+function customDatabase() {
+    return dataform.projectConfig.vars.env + "_" + dataform.projectConfig.defaultSchema;
+}
+
+module.exports = {customSchema,customDatabase,audit};
+
 
 
