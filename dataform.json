@@ -1,7 +1,12 @@
 {
-  "defaultSchema": "dataform",
+  "defaultSchema": "analytics",
   "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
   "defaultDatabase": "future-ripsaw-399707",
-  "defaultLocation": "US"
+  "defaultLocation": "US",
+  "vars": {
+    "env": "dev",
+    "movies_database":"nice-champion-400508",
+    "movies_schema":"analytics"
+  }
 }

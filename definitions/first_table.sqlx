@@ -1,5 +1,12 @@
 config {
-    type: "table"
+    type: "table",
+    schema: udf.customSchema("cerner")
+}
+pre_operations {
+    ${operations.pre_op_detail("first_table","first table",udf.customSchema("cerner"))}
+}
+
+post_operations {
+    ${operations.post_op_detail("first_table",udf.customSchema("cerner"))}
 }
 select 1 as test
-
