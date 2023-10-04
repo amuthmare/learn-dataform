@@ -1,5 +1,6 @@
 config {
     type: "view",
+    dependencies: "second_table"
 }
 
-select * from ${ref("movies")}
+select * from ${env_var.def_project}.${env_var.def_schema}.second_table
