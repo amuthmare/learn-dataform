@@ -24,7 +24,7 @@ function post_op_detail(table,schema_name)
     return`
     update ${schema_name}.workflow_logs
     set end_time = current_timestamp()
-    and run_status = 'Success'
+    ,run_status = 'Success'
     where model_name = "${schema_name}.${table}"`;
 }
  

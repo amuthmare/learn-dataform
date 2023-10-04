@@ -1,12 +1,12 @@
 config {
     type: "table",
-    schema: udf.customSchema("cerner")
+    schema: udf.customSchema("movies")
 }
 pre_operations {
-    ${operations.pre_op_detail("first_table","first table",udf.customSchema("cerner"))}
+    ${operations.pre_op_detail("first_table","first table",udf.customSchema("movies"))}
 }
 
 post_operations {
-    ${operations.post_op_detail("first_table",udf.customSchema("cerner"))}
+    ${operations.post_op_detail("first_table",udf.customSchema("movies"))}
 }
-select 1 as test
+select * from ${ref("movies")}

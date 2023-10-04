@@ -11,7 +11,7 @@ function customSchema takes an argument and joins with default env value,from da
 to create custom schema name
 */
 function customSchema(source) {
-    return "infohub" + "_" + source;
+    return dataform.projectConfig.vars.env + "_" + source;
 }
 
 /* 

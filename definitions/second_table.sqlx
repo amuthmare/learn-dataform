@@ -1,0 +1,5 @@
+config {
+    type: "table"
+}
+
+Select 1 as test
